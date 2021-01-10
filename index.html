@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Home - Programmer101N</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="icon food">
+				<div class="circle">
+					<div class="inner-circle">Food</div>
+                </div>
+			</div>
+
+			<div class="icon water">
+				<div class="circle">
+					<div class="inner-circle">Water</div>
+				</div>
+			</div>
+
+			<div class="icon energy">
+				<div class="circle">
+					<div class="inner-circle">Energy</div>
+				</div>
+			</div>
+
+			<div
+				class="d-flex flex-column justify-content-center align-items-center min-vw-100 min-vh-100"
+			>
+				<div class="d-flex flex-column heading">
+                    <span class="start">Your Plan,</span>
+                    <span class="end">Your Planet</span>
+                </div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Asperiores illo, dignissimos beatae eaque reprehenderit
+					repellendus natus nam, voluptatum adipisci, sed accusamus ab
+					molestiae laboriosam aliquam deserunt sit officiis dicta
+					magni.
+				</p>
+			</div>
+		</div>
+	</body>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script>
+        $('.inner-circle').hover((e) => {
+            $(e.target.parentElement).addClass("big-radius");
+            $(e.target).css('backgroundColor', 'white');
+        }, (e) => {
+            $(e.target.parentElement).removeClass("big-radius");
+            $(e.target).css('backgroundColor', 'transparent');
+        });
+    </script>
+</html>

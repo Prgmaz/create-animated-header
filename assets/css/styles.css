@@ -1,0 +1,101 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.icon{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.food{
+    left: 35%;
+    top: 15%;
+}
+
+.water{
+    top: 70%;
+    left: 5%;
+}
+
+.energy{
+    top: 60%;
+    left: 90%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    font-weight: 900;
+    z-index: -1;
+}
+
+.inner-circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    font-weight: 900;
+}
+
+.food .circle{
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.water .circle{
+    background: rgba(0, 174, 255, 0.4);
+}
+
+.energy .circle{
+    background: rgba(251, 255, 0, 0.4);
+}
+
+
+.d-flex p{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+}
+
+.heading{
+    width: 25%;
+    font-size: 72px;
+}
+
+.start{
+    align-self: flex-start;
+}
+
+.end{
+    align-self: flex-end;
+}
+
+.big-radius{
+    height: 75vw;
+    width: 75vw;
+}
